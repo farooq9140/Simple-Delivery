@@ -1,17 +1,17 @@
 # Simple-Delivery
 
-**Product description**
-The Simply Delivered is a mailbox and application combination used to notify online shoppers
+**Product description**<br>
+The Simply Delivered is a mailbox and an Android application combination used to notify online shoppers
 that their awaiting deliveries have been delivered.
 
-**Benefit proposition**
+**Benefit proposition**<br>
 As the global pandemic has left many people to stay home, online shopping has become an
 activity that many have started to participate in. Unfortunately, some have found the perfect
 opportunity to steal other people’s packages. This is where Simply Delivered comes in! When a
 delivery has been delivered, a notification will be sent directly to their phone and they will be
 able to lock their mailbox, to make sure that it won’t be stolen.
 
-**Key business goal**
+**Key business goal**<br>
 The simply delivered mailbox with all the internal hardware components will be sold at $299,
 yielding a $166.10 per unit sold gross margin. The hardware-dependent simply delivered app
 will be free to register and use. The development team will spend 500 hours developing the
@@ -22,11 +22,11 @@ the prices of mailboxes in the market that have no sensor features by $157. The 
 online shopping from the 2020 pandemic further justifies the demand and the profitability of
 simply delivered.
 
-**Target market**
+**Target market**<br>
 The target market for this product is anyone that participates in online shopping more
 specifically, for our first prototype, for those who live in single family homes.
 
-**Assumptions**
+**Assumptions**<br>
 First, our product does not guarantee that the user's deliveries will not be stolen. It, however,
 serves as a first step towards that.
 
@@ -39,14 +39,14 @@ regardless if the user’s application is on or not.
 Third, will make sure that the locking system is properly implemented such that it is not of a
 worry to the users.
 
-**Constraints**
+**Constraints**<br>
 Constraints 1: The sensor needs to have an accurate detection, otherwise, the notification sent
 to the users will be misleading.
 Constraints 2: The suggestions form the application may not meet the expectation of the user.
 Constraints 3: The professional information from the product may not be understandable to the
 users.
 
-**Stakeholders**
+**Stakeholders**<br>
 The stakeholders for the Simply Delivered product are delivery companies, whoever participates
 in online shopping and hopefully in the future, e-commerce websites.
 
@@ -62,11 +62,11 @@ and keep track of their receiving orders in the app.
 In the future, e-commerce websites can benefit from working in collaboration with the simply
 delivered to notify the users of their delivery arrival in a safe manner with our mailbox.
 
-**Contributors**
-Tianyang Jin
-Karyn Mae Gamay 
-Joshua Castillo 
-Felix Chen Lo 
-Shuang Luo
-Sugasini Kandiah 
-Farouq HamedAllah 
+**Contributors**<br>
+Tianyang Jin,
+Karyn Mae Gamay,
+Joshua Castillo, 
+Felix Chen Lo, 
+Shuang Luo,
+Sugasini Kandiah, 
+Farouq HamedAllah. 
