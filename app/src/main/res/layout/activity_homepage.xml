@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    android:background="#F7FFFFFF"
+    android:minWidth="19dp"
+    tools:context=".Homepage">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:background="#F7FFFFFF"
+        android:id="@+id/your_layout_id"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:id="@+id/linearLayoutHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Homepage">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:background="#F7FFFFFF"
+                app:subtitleTextColor="#0A0A0A"
+                app:titleTextColor="#111111" />
+
+
+            <include
+                android:id="@+id/component_greeting"
+                layout="@layout/component_greeting"
+                android:layout_width="match_parent"
+                android:layout_height="216dp" />
+
+            <include
+                android:id="@+id/component_current_state"
+                layout="@layout/component_current_state"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+            <include
+                android:id="@+id/component_lock"
+                layout="@layout/component_lock"/>
+            <include
+                android:id="@+id/component_next_delivery"
+                layout="@layout/component_next_delivery" />
+            <include
+                android:id="@+id/component_add"
+                layout="@layout/component_add" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/homepage_nav_header"
+        app:menu="@menu/drawer_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

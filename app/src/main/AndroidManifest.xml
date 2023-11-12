@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.delivery_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Delivery_app"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Scheduled_Delivery"
+            android:parentActivityName=".Homepage"/>
+        <activity android:name=".EditDelivery"
+            android:parentActivityName=".Scheduled_Delivery"/>
+        <activity android:name=".Settings"
+            android:parentActivityName=".Homepage"/>
+        <activity
+            android:name=".Forget_Password"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".PushNotificationService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"></action>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

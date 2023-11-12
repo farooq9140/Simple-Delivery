@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">delivery_app</string>
+
+    <string-array name="notiTypes">
+        <item>Vibration</item>
+        <item>Ring</item>
+        <item>On Display</item>
+        <item>Phone Call</item>
+    </string-array>
+
+</resources>

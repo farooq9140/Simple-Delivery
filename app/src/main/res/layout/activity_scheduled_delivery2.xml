@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    android:background="#F7FFFFFF"
+    android:minWidth="19dp"
+    tools:context=".Scheduled_Delivery">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:background="#F7FFFFFF"
+        android:id="@+id/scrollLayout"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7FFFFFF"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFFFFF"
+                app:subtitleTextColor="#0A0A0A"
+                app:titleTextColor="#111111" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expected Delivery"
+                android:id="@+id/tvE"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:gravity="center"/>
+
+            <include
+                android:id="@+id/component_lv"
+                layout="@layout/component_lv"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Past Delivery"
+                android:id="@+id/tvP"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:gravity="center" />
+
+            <include
+                android:id="@+id/component_lv1"
+                layout="@layout/component_lv1"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Add expected delivery"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/homepage_nav_header"
+        app:menu="@menu/drawer_menu">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
